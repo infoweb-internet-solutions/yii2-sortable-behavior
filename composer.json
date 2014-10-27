@@ -14,7 +14,7 @@
     "require": {
         "yiisoft/yii2": "*",
         "yiisoft/yii2-jui": "*",
-        "kartik-v/yii2-widgets": "dev-master",
+        "kartik-v/yii2-widgets": "dev-master"
     },
     "autoload": {
         "psr-4": {
