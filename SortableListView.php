@@ -13,7 +13,7 @@
  *
  */
 
-namespace sjaakp\sortable;
+namespace infoweb\sortable;
 
 use Yii;
 use yii\widgets\ListView;

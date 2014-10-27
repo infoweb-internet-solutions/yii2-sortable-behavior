@@ -5,7 +5,7 @@
  * Sjaak Priester, Amsterdam 31-08-2014.
  */
 
-namespace sjaakp\sortable;
+namespace infoweb\sortable;
 
 use yii\db\ActiveRecord;
 use yii\db\ActiveQuery;

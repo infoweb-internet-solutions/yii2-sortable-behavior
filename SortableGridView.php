@@ -13,14 +13,14 @@
  *
  */
 
-namespace sjaakp\sortable;
+namespace infoweb\sortable;
 
 use Yii;
-use yii\grid\GridView;
 use yii\jui\JuiAsset;
 use yii\helpers\Json;
 use yii\helpers\Url;
 use yii\web\JsExpression;
+use kartik\grid\GridView;
 
 /**
  * Class SortableGridView

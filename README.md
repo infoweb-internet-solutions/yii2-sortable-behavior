@@ -15,13 +15,13 @@ A demonstration of the **Sortable** suit is [here](http://www.sjaakpriester.nl/d
 
 The preferred way to install **Sortable** is through [Composer](https://getcomposer.org/). Either add the following to the require section of your `composer.json` file:
 
-`"sjaakp/yii2-sortable-behavior": "*"` 
+`"infoweb/yii2-sortable-behavior": "*"` 
 
 Or run:
 
-`$ php composer.phar require sjaakp/yii2-sortable-behavior "*"` 
+`$ php composer.phar require infoweb/yii2-sortable-behavior "*"` 
 
-You can manually install **Sortable** by [downloading the source in ZIP-format](https://github.com/sjaakp/yii2-sortable-behavior/archive/master.zip).
+You can manually install **Sortable** by [downloading the source in ZIP-format](https://github.com/infoweb-internet-solutions/yii2-sortable-behavior/archive/master.zip).
 
 ## SortableGridView and SortableListView ##
 
