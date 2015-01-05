@@ -12,9 +12,9 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*",
-        "yiisoft/yii2-jui": "*",
-        "kartik-v/yii2-widgets": "dev-master"
+        "yiisoft/yii2": "@stable",
+        "yiisoft/yii2-jui": "@stable",
+        "kartik-v/yii2-widgets": "@stable"
     },
     "autoload": {
         "psr-4": {
