@@ -101,18 +101,23 @@ class Sortable extends Behavior {
      *                                      if string, ordering is restricted to records with the same foreign key value
      * @throws \yii\base\InvalidConfigException
      */
-    public function order($newPosition, $foreignKeyName = null) {
+    public function order($newPosition, $foreignKeyNames = []) {
         /**
          * @var $owner ActiveRecord
          */
         $owner = $this->owner;
 
-        if ($foreignKeyName)    {   // restrict order to records with the same foreign key value
-            if (! is_array($this->orderAttribute) || ! isset($this->orderAttribute[$foreignKeyName]))
-                throw new InvalidConfigException(get_called_class() . "::orderAttribute[$foreignKeyName] is not set.");
+        if ($foreignKeyNames)    {
 
-            $orderAttr = $this->orderAttribute[$foreignKeyName];
-            $where = [$foreignKeyName => $owner->getAttribute($foreignKeyName)];
+            foreach ($foreignKeyNames as $foreignKeyName) {
+
+                // restrict order to records with the same foreign key value
+                if (! is_array($this->orderAttribute) || ! isset($this->orderAttribute[$foreignKeyName]))
+                    throw new InvalidConfigException(get_called_class() . "::orderAttribute[$foreignKeyName] is not set.");
+
+                $orderAttr = $this->orderAttribute[$foreignKeyName];
+                $where[$foreignKeyName] = $owner->getAttribute($foreignKeyName);
+            }
         }
         else    {   // order all records
             $orderAttr = null;
