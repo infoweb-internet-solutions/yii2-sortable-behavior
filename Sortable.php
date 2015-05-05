@@ -109,6 +109,7 @@ class Sortable extends Behavior {
 
         if ($foreignKeyNames)    {
 
+            // Custom
             foreach ($foreignKeyNames as $foreignKeyName) {
 
                 // restrict order to records with the same foreign key value
