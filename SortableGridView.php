@@ -88,6 +88,6 @@ class SortableGridView extends GridView {
         $sortJson = Json::encode($sortOpts);
         $id = $this->getId();
 
-        $view->registerJs("jQuery('#{$id} tbody').sortable($sortJson);");
+        $view->registerJs("var id = {$id}; var sortJson = {$sortJson}; jQuery('#{$id} tbody').sortable($sortJson);");
     }
 }
